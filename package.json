@@ -1,0 +1,23 @@
+{
+  "name": "csc_437_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montalvoB/CSC_437_JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/montalvoB/CSC_437_JS/issues"
+  },
+  "homepage": "https://github.com/montalvoB/CSC_437_JS#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

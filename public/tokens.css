@@ -1,0 +1,17 @@
+:root {
+    --color-accent: #dae4ee;
+    --color-accent-inverted: #3a4046;
+    --color-link: rgb(27, 118, 221);
+    --color-link-inverted: #ffe6fe;
+    --color-text: rgb(43, 41, 56);
+    --color-text-inverted: white;
+}
+
+body.dark-mode {
+    --color-accent: #3a4046;
+    --color-accent-inverted: #dae4ee;
+    --color-link: #ffe6fe;
+    --color-link-inverted: rgb(27, 118, 221);
+    --color-text: white;
+    --color-text-inverted: rgb(43, 41, 56);
+}

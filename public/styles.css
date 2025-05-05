@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-accent);
+  font-family: "Courier New";
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-link);
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: var(--color-link-inverted);
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--color-accent-inverted);
+  color: var(--color-text-inverted);
+  font-family: "Special Gothic Expanded One", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header a {
+  color: var(--color-text-inverted);
+}
+
+h1 {
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+main {
+  margin: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+}
+
+.hobbies {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.projects-page {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding-left: 1.6em;
+}
+
+dd {
+  margin-left: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+figure {
+  margin-bottom: 1.5em;
+}
+
+img {
+  border: 1em ridge #63483e;
+}
+
+.about h2 {
+  font-size: 3rem;
+}
+
+hr {
+  border: 0.1em solid var(--color-accent-inverted);
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+button {
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.3em;
+  border: 1px solid var(--color-accent-inverted);
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  font-family: "Courier New";
+  font-weight: bold;
+  display: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0.5rem;
+  white-space: nowrap;
+  
+}
+
+@media (max-width: 45rem) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  h1 {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: row;
+    padding: 0 1rem 0.5rem 1rem;
+    background-color: var(--color-accent-inverted);
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
